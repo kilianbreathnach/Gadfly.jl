@@ -3,15 +3,16 @@ This is a log of major changes in Gadfly between releases. It is not exhaustive.
 Each release typically has a number of minor bug fixes beyond what is listed here.
 
 # Version 0.7.1
-  * Add `linestyle` aesthetic (#1181)
-  * Add `Guide.shapekey` (#1156)
-  * `Geom.contour`: add support for `DataFrame` (#1150) 
+
+  * `Geom.contour`: add support for `DataFrame` (#1150)
+  * `Geom.density`: add ability to use custom kernels and adds support for scaling, stacking, vertical orientation ([#1157](https://github.com/GiovineItalia/Gadfly.jl/pull/1157))
+  * `Geom.violin`: add ability to adjust scaling and bandwidth and support for horizontal and split violins ([#1157](https://github.com/GiovineItalia/Gadfly.jl/pull/1157))
 
 # Version 0.7.0
 
   * Support DataFrames.jl v0.11+ (#1090, #1129, #1131)
   * Change `Theme(grid_strokedash=)` to `Theme(grid_line_style=)` and include in docs (#1106)
-  * Add `Geom.ellipse` (#1103)  
+  * Add `Geom.ellipse` (#1103)
   * Improved SVG interactivity (#1037)
 
 # Version 0.6.5
@@ -24,7 +25,7 @@ Each release typically has a number of minor bug fixes beyond what is listed her
 # Version 0.6.4
 
   * Regression testing tools (#1020)
-  
+
 # Version 0.6.3
 
   * Wide format data (#1013)
@@ -215,5 +216,3 @@ Each release typically has a number of minor bug fixes beyond what is listed her
     keys are wrapped automatically.
 
   * Default Theme changes.
-
-
